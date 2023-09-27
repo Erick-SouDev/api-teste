@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/", method = RequestMethod.GET)
-public class ControlerEncarte {
+@RequestMapping(value = "/teste", method = RequestMethod.GET)
+public class ControlerTesteApi {
 
-	@GetMapping(value   = { "/teste"} , produces  = {"application/json" })
+	@GetMapping(value   = { "/hello"} , produces  = {"application/json" })
 	public ResponseEntity testeHelloRestApi(){
-		return new ResponseEntity("Ola Rest Api" , HttpStatus.OK);
+		return new ResponseEntity("Teste Api" , HttpStatus.OK);
 	}
 }
